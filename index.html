@@ -11,35 +11,43 @@
         
         <div id="opening">
             <div class="topnav" id="myTopnav">
-            <a href="index.html#game" class="active">Game</a>
-            <a href="index.html#history">History</a>
-            <a href="#contact">Characters</a>
-            <a href="#about">Gameplay</a>
-            <a href="#about">Mechanics</a>
-            <a href="#about">Locations</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-        </div>
+  <a href="index.html#game" class="active">Game</a>
+  <a href="index.html#history">History</a>
+  <div class="dropdown">
+    <button class="dropbtn">Characters 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Champions</a>
+      <a href="#">Enimies</a>
+      <a href="#">Other</a>
+    </div>
+  </div> 
+  <a href="#contact">Gameplay</a>
+  <a href="#about">Mechanics</a>
+  <a href="#about">Locations</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
         </div>
         <div id="game">
             <h2>Game</h2>
         </div>
         <div id="pic1">
-            <h1>Breath of the wild</h1>
+            <h1></h1>
         </div>
         <div id="history">
             <h2>History</h2>
         </div>
         <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
         </script>
     </body>
 </html>
