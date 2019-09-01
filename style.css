@@ -10,17 +10,17 @@ body{
 #opening{
     height: 100vh;
     width: 100%;
-    background-image: url(images/firstimg.jpg);
+    background-image: url(images/indexbgimg.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
     opacity: 0.9;
 }
 #opening1{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
-    background-image: url(images/firstimg.jpg);
-    background-size: cover;
+    background-image: url(images/chrctrbgimg.jpg);
+    background-size: ;
     display: table;
     background-attachment: fixed;
     opacity: 0.9;
@@ -31,10 +31,29 @@ body{
     display: table;
     background-color: white;
 }
+#champions{
+    height: 50vh;
+    width: 100%;
+    display: table;
+    background-color: white;
+    z-index: -1;
+}
+#enimies{
+    height: 50vh;
+    width: 100%;
+    display: table;
+    background-color: white;
+}
+#other{
+    height: 50vh;
+    width: 100%;
+    display: table;
+    background-color: white;
+}
 #pic1{
     height: 50vh;
     width: 100%;
-    background-image: url(images/secondimg.jpg);
+    background-image: url(images/indeximg1.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -57,23 +76,40 @@ h1{
 }
 h2{
     font-family: hylia;
-    font-size: 50px;
-    color:black;
     text-align: center;
-    margin: 0px;
-    display: table-cell;
+    color: black;
+    font-size: 50px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    z-index: -3;
+    position: inherit;
+}
+h3{
+    font-family: hylia;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    
+}
+p{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgba(43,43,43,0.4);
   overflow: hidden;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 240px;
+    z-index: 2;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+    float: left;
   display: block;
   color: white;
   text-align: center;
@@ -139,6 +175,7 @@ h2{
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: rgba(43,43,43,0.8);
   color: white;
+    transform: scale(1.03);
 }
 
 /* Add a grey background to dropdown links on hover */
@@ -185,4 +222,25 @@ h2{
     text-align: left;
     font-size: 20px
   }
+}
+#logo{
+    margin-top: 20px;
+    width: 400px;
+    height: auto; 
+    opacity: 0.8;
+}
+#logo:hover{
+    opacity: 0.7;
+    transform: scale(1.01);
+}
+
+#logo1{
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+    opacity: 0.8;  
+}
+#logo1:hover{
+    opacity: 0.7;
+    transform: scale(1.01);
 }
